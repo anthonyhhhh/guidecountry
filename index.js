@@ -8,7 +8,7 @@ const getCountry = async ()=>{
         const data = await response.json();
         countriesInfo = [...data];
     } catch (error) {
-        alert('country api error');
+        alert('error');
     }
 };
 getCountry();
