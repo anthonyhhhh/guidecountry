@@ -18,7 +18,7 @@ const getWeather = async(lat,lon) =>{
         const weatherAPI = await weatherResponse.json();
         return weatherAPI
     } catch (error) {
-        alert('weather api error')
+        alert('error')
     }
 } 
 input.addEventListener('input', async e =>{
