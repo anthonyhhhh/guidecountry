@@ -150,44 +150,14 @@ h2{
     height: 14rem;
     opacity: 0.6;
     align-self: center;
-    padding: 0.4rem 0.4rem 0rem 0.4rem;
+    padding: 0.8rem 0.8rem 0rem 0.8rem;
     font-size: 0.8rem;
 }
 .unique-flag{
     height: 30%;
     width: auto;
 }
-@keyframes float {
-    0%,
-    100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-  }
-@keyframes appear {
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
-@keyframes shadow-floating {
-    0%{
-        scale: (1);
-        opacity: 1;
-    }
-    50%{
-        scale: 0.7;
-        opacity: 0.3;
-    }
-    100%{
-        scale: (1);
-        opacity: 1;
-    }
-}
+
 @media (min-width: 420px) {
     #main-container{
         width: 80%;
@@ -212,19 +182,19 @@ h2{
         width: 60%;
     }
     .country-card{
-        width: 8rem;
+        width: 9rem;
     }
     #draw{
-        height: 14rem;
+        height: 15rem;
     }
     h1{
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
     #input{
         height: 1.5rem;
     }
     .search-icon{
-        width: 1.3rem;
+        width: 1.8rem;
     }
 }
 @media (min-width: 1440px) {
