@@ -24,11 +24,11 @@ const getWeather = async(lat,lon) =>{
 input.addEventListener('input', async e =>{
     e.preventDefault();
     const countriesInfoFiltered = countriesInfo.filter(info => info.name.common.toLowerCase().startsWith(input.value.toLowerCase()));
-    console.log(countriesInfoFiltered);///////////////////////////////////
+    console.log(countriesInfoFiltered);
     countryContainer.innerHTML = '';
     countryContainer.style.flexDirection = 'row';
     if (countriesInfoFiltered.length > 10 && countriesInfoFiltered.length < 200) {
-        countryContainer.innerHTML= `<h2>Your search must be more specific.</h2>`
+        countryContainer.innerHTML= `<h2>you must be more specific.</h2>`
     }
     if (countriesInfoFiltered.length > 0 && countriesInfoFiltered.length <= 10) {
         for (let index = 0; index < countriesInfoFiltered.length; index++) {
@@ -61,7 +61,7 @@ input.addEventListener('input', async e =>{
         countryContainer.style.flexDirection = 'column';
     }
     if (countriesInfoFiltered.length === 0) {
-        countryContainer.innerHTML= `<h2>Country does not exist. Try again</h2>`
+        countryContainer.innerHTML= `<h2>this country does not exist</h2>`
     }
 
 });
