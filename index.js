@@ -32,7 +32,6 @@ const getWeather = async(lat,lon) =>{
 input.addEventListener('input', async e =>{
     e.preventDefault();
     const countriesInfoFiltered = countriesInfo.filter(info => info.name.common.toLowerCase().startsWith(input.value.toLowerCase()));
-    console.log(countriesInfoFiltered);
     countryContainer.innerHTML = '';
     countryContainer.style.flexDirection = 'row';
     if (countriesInfoFiltered.length > 10 && countriesInfoFiltered.length < 200) {
