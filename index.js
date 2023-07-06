@@ -1,5 +1,9 @@
 const input = document.querySelector('#input');
 const countryContainer = document.querySelector('#country-container');
+const mainContainer = document.querySelector('#main-container')
+
+const loaderContainer = document.querySelector('.loader-container')
+
 let countriesInfo = [];
 
 const getCountry = async ()=>{
@@ -7,6 +11,10 @@ const getCountry = async ()=>{
         const response = await fetch('https://restcountries.com/v3.1/all');
         const data = await response.json();
         countriesInfo = [...data];
+        if (data) {
+            loaderContainer.style.display = 'none'
+            mainContainer.style.display = 'inline-flex'
+        }
     } catch (error) {
         alert('error');
     }
