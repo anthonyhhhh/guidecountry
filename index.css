@@ -124,6 +124,8 @@ h2{
 .lds-facebook {
   display: inline-block;
   position: relative;
+  top: 10rem;
+  left: 0.3rem;
   width: 80px;
   height: 80px;
 }
